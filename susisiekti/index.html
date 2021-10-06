@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Susisiekime - Mantelio kanapių arbata</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/main.css">
+        <link rel="stylesheet" href="contact_form.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav>
+            <div class="logo">Mantelio kanapių arbata</div>
+            <input type="checkbox" id="click">
+            <label for="click" class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul id="menu">
+                <li><a class="link" href="/">Pagrindinis</a></li>
+                <li><a class="link" href="/apie">Apie</a></li>
+                <li><a class="link" href="/produktai">Produktai</a></li>
+                <li><a class="link" href="/duk">D.U.K.</a></li>
+                <li><a class="link active" href="/susisiekti">Susisiekti</a></li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+            <div class="section-header text-center">
+                <h1>Turite klausimų? Susisiekime!</h1>
+            </div>
+            <div class="page-width">
+                <div id="fcf-form">
+                    <h3 style="margin-bottom: 15px;">Parašykite mums</h3>
+                    <form id="fcf-form-id" class="fcf-form-class" method="post" action="">
+                        <div class="fcf-form-group">
+                            <label for="Name" class="fcf-label">Jūsų vardas</label>
+                            <div class="fcf-input-group">
+                                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                            </div>
+                        </div>
+                        <div class="fcf-form-group">
+                            <label for="Email" class="fcf-label">Jūsų el. paštas</label>
+                            <div class="fcf-input-group">
+                                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                            </div>
+                        </div>
+                        <div class="fcf-form-group">
+                            <label for="Message" class="fcf-label">Jūsų žinutė</label>
+                            <div class="fcf-input-group">
+                                <textarea name="Message" id="Message" class="fcf-form-control"  rows="6" maxlength="3000"></textarea>
+                            </div>
+                        </div>
+                        <div class="fcf-form-group">
+                            <button type="reset" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Siųsti žinutę</button> <!-- Padariau reset, o ne submit, nes nereikalauja siuntimo logikos-->
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <footer class="site-footer">
+            <div class="page-width">
+                <div class="site-footer-content">
+                    <div class="site-footer-item">
+                        <div class="bigger-text">
+                            <p class="h4">Pardavėjas</p>
+                        </div>
+                        <div class="inner-text">
+                            <p>
+                                UAB "Mantelio kanapių arbata"
+                                <br>
+                                Vasaros g. 5, Vilniaus m.
+                                <br>
+                                Įm. k. 3054125878
+                                <br>
+                                PVM mokėtojo kodas LT1000135148954
+                                <br>
+                                <br>
+                                labas@mantelioarbata.com
+                                <br>
+                                +37012345678
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script src="/main.js"></script>
+</html>
