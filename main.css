@@ -115,11 +115,13 @@ nav .menu-btn i {
     text-align: center;
 }
 
+/* TODO sutvarkyti products page */
 .page-width {
     padding-left: 55px;
     padding-right: 55px;
-    max-width: 1200px;
     margin: 0 auto;
+    width: 1000px;
+    /* max-width: 1200px; */
 }
 
 #Collection {
@@ -249,6 +251,12 @@ nav .menu-btn i {
     font-size: 13px;
 }
 
+.outer-link {
+    color: black; 
+    border-bottom: 1px solid currentColor; 
+    text-decoration: none;
+}
+
 .outer-link:hover {
     opacity: 80%;
 } 
@@ -309,3 +317,51 @@ cursor: pointer;
 .fixed-position {
     overflow: hidden;
  }
+
+.tg  {
+    border-collapse:collapse;
+    border-spacing:0;
+    margin: 0 auto;
+    margin-top: 1cm;
+}
+
+.tg td{
+    border-color:black;
+    border-style:solid;
+    border-width:1px;
+    font-size:14px;
+    overflow:hidden;
+    padding:10px 5px;
+    word-break:normal;
+}
+
+.tg th{
+    border-color:black;
+    border-style:solid;
+    border-width:1px;
+    font-size:14px;
+    font-weight:normal;
+    overflow:hidden;
+    padding:10px 5px;
+    word-break:normal;
+}
+
+.tg .tg-0lax{
+    text-align:left;
+    vertical-align:top
+}
+
+@media screen and (max-width: 767px) {
+    .tg {
+        width: auto !important;
+    }
+    
+    .tg col {
+        width: auto !important;
+    }
+    
+    .tg-wrap {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+}
