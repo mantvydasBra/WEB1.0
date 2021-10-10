@@ -80,11 +80,13 @@ nav .menu-btn i {
         display: block;
         text-align: center;
         transition: all 0.3s ease;
+        z-index: 1;
     }
 
     #click:checked ~ ul {
         left: 0%;
     }
+
     nav ul li {
         margin: 40px 0;
         display: block;
@@ -192,6 +194,45 @@ nav .menu-btn i {
     display: inherit;
 }
 
+.site-footer-item {
+    display: table;
+    float: left;
+    padding-left: 2cm;
+    padding-bottom: 1cm;
+}
+
+.site-footer-links {
+    word-break: break-all;
+    width: 350px;
+}
+
+.site-footer-link-item {
+    list-style-type: none;
+    display: inline;
+    padding-right: 10px;
+}
+
+.site-footer-link-item a {
+    color: #1b1b1b; 
+    text-decoration: none;
+    font-size: 13px;
+}
+
+@media (max-width: 1140px) {
+    .site-footer-links {
+        word-break: keep-all;
+        width: 350px;
+    }
+
+    .site-footer-link-item {
+        display:list-item;
+    }
+}
+
+.site-footer-link-item a:hover {
+    text-decoration: underline;
+}
+
 .h4 {
     font-size: 15px;
 }
@@ -207,3 +248,56 @@ nav .menu-btn i {
 .outer-link:hover {
     opacity: 80%;
 } 
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    margin: auto
+}
+
+/* Style the images inside the grid */
+.column img {
+    opacity: 0.8;
+    cursor: pointer;
+    max-width: 80%;
+  }
+
+.column img:hover {
+    opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+  /* The expanding image container (positioning is needed to position the close button and the text) */
+.container {
+position: relative;
+display: none;
+max-width: 60%;
+margin: auto;
+}
+
+/* Expanding image text */
+#imgtext {
+position: absolute;
+bottom: 15px;
+left: 15px;
+color: white;
+font-size: 20px;
+}
+
+/* Closable button inside the image */
+.closebtn {
+position: absolute;
+top: 10px;
+right: 15px;
+color: white;
+font-size: 35px;
+cursor: pointer;
+}
