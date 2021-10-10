@@ -95,7 +95,7 @@ nav .menu-btn i {
     nav ul li a {
         font-size: 20px;
 
-    }
+    }   
 }
 
 .main-content {
@@ -301,3 +301,7 @@ color: white;
 font-size: 35px;
 cursor: pointer;
 }
+
+.fixed-position {
+    overflow: hidden;
+ }

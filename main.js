@@ -22,3 +22,6 @@ function zoomIn(imgs) {
     // Show the container element (hidden with CSS)
     expandImg.parentElement.style.display = "block";
   }
+
+ 
+ document.getElementsByClassName("menu-btn")[0].addEventListener("click", () => document.getElementsByTagName("body")[0].classList.toggle("fixed-position"));
