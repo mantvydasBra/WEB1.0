@@ -1,5 +1,4 @@
 document.getElementById("menu").addEventListener("click", function(e) {
-    console.log("asdasd")
     if (e.target && e.target.nodeName === "A") {
         let lis = document.getElementsByClassName("link");
         for (let item of lis) {
