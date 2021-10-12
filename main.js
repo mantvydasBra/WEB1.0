@@ -23,5 +23,7 @@ function zoomIn(imgs) {
   }
 
  
-document.getElementsByClassName("menu-btn")[0].addEventListener("click", () => document.getElementsByTagName("body")[0].classList.toggle("fixed-position"));
-document.getElementsByClassName("menu-btn")[0].addEventListener("click", () => document.getElementsByTagName("main")[0].classList.toggle("no-clicks"));
+document.getElementsByClassName("menu-btn")[0].addEventListener("click", () => {
+    document.getElementsByTagName("body")[0].classList.toggle("fixed-position");
+    document.getElementsByTagName("main")[0].classList.toggle("no-clicks");
+})
