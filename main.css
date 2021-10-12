@@ -114,14 +114,12 @@ nav .menu-btn i {
     text-align: center;
 }
 
-/* TODO sutvarkyti products page */
 .page-width {
     padding-left: 55px;
     padding-right: 55px;
     margin: 0 auto;
     width: 1000px;
     max-width: 100%;
-    /* max-width: 1200px; */
 }
 
 #Collection {
@@ -134,7 +132,6 @@ nav .menu-btn i {
     padding: 0;
     display: flex;
     flex-wrap: nowrap;
-    /* margin-left: -30%; */
 }
 
 #Collection ul {
@@ -145,17 +142,11 @@ nav .menu-btn i {
     display: grid;
     width: 225px;
     max-width: 100%;
-    /* max-height: 100%; */
-    /* object-fit: contain; */
-    /* position: absolute;
-    top: 0; */
 }
 
 .grid-view-image {
     margin: 0 auto 15px;
     position: relative;
-    /* width: 100%; */
-    /* max-width: 100%; */
 }
 
 .grid-view-item {
@@ -166,13 +157,10 @@ nav .menu-btn i {
 .grid-item {
     float: left;
     padding-left: 20px;
-    /* padding-bottom: px; */
 }
 
 .grid-item:hover {
-    /* background: #23BA58; */
     opacity: 85%;
-
 }
 
 .grid-item:hover .product-name {
@@ -184,7 +172,6 @@ nav .menu-btn i {
 
 .price {
     font-weight: bold;
-    /* padding-bottom: 0px; */
 }
 
 .full-width-link {
